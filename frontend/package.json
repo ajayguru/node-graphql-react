@@ -1,0 +1,42 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend App",
+  "author": "Ajay",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "parcel ./src/index.html --no-cache",
+    "lint": "eslint . --ext .js,.jsx",
+    "test": "jest --colors --coverage --verbose --runInBand"
+  },
+  "jest": {
+      "setupTestFrameworkScriptFile": "./test/setup.js"
+  },
+  "keywords": [
+    "SOLID",
+    "reactjs",
+    "js"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "semantic-ui-react": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.2.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint": "^7.6.0",
+    "jest": "^26.2.2",
+    "parcel-bundler": "^1.12.4",
+    "react-test-renderer": "^16.13.1"
+  }
+}
